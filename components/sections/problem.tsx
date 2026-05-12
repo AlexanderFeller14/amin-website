@@ -32,10 +32,10 @@ export function Problem() {
       className="relative py-[clamp(72px,10vw,140px)]"
     >
       <div className="wrap">
-        <SectionHead index="01" kicker="Das Problem">
-          Die meisten Haushalte verlieren Geld nicht durch grosse Fehler,
-          sondern durch{" "}
-          <em className="italic text-green">viele kleine.</em>
+        <SectionHead index="01" kicker="Wo Geld verloren geht">
+          <span className="block text-ink-muted">Doppelt versichert.</span>
+          <span className="block text-ink-2">Falsch angelegt.</span>
+          <em className="block italic text-green">Zu teuer abgesichert.</em>
         </SectionHead>
 
         <div className="grid grid-cols-12 gap-6">

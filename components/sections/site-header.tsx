@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { BrandMark } from "@/components/brand-mark";
 
 const NAV = [
-  { href: "#problem", label: "Problem" },
+  { href: "#problem", label: "Diagnose" },
   { href: "#leistungen", label: "Leistungen" },
   { href: "#prozess", label: "Prozess" },
   { href: "#vorteile", label: "Vorteile" },
