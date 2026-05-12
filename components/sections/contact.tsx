@@ -44,10 +44,12 @@ const META = [
     lbl: "E-Mail",
     val: (
       <a
-        className="break-all hover:text-signal"
+        className="break-words hover:text-signal"
         href="mailto:amin.barraza@swisslife-select.ch"
       >
-        amin.barraza@swisslife-select.ch
+        amin.barraza
+        <wbr />
+        @swisslife-select.ch
       </a>
     ),
   },

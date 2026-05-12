@@ -37,8 +37,6 @@ export function SiteFooter() {
               <span>Persönlich beraten</span>
               <span className="text-ink-muted-2">·</span>
               <span>Zollikofen</span>
-              <span className="text-ink-muted-2">·</span>
-              <span>Edition MMXXVI</span>
             </p>
           </div>
 
