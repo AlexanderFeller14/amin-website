@@ -51,15 +51,34 @@ export function Benefits() {
         </SectionHead>
 
         <div className="grid grid-cols-12 gap-6">
-          <Reveal
-            as="p"
-            className="col-span-12 font-serif text-[clamp(22px,2.2vw,30px)] font-light leading-[1.28] tracking-[-0.008em] text-ink-2 md:col-span-5"
-          >
-            Beratung, die langfristig denkt. Vom ersten 3a bis zur
-            Pensionierung.{" "}
-            <em className="italic text-green">Ein Ansprechpartner, eine Akte,</em>{" "}
-            über Jahre. Das ist der Unterschied, der alles ändert.
-          </Reveal>
+          <div className="col-span-12 md:col-span-5">
+            <Reveal
+              as="p"
+              className="font-serif text-[clamp(30px,3.2vw,46px)] font-light leading-[1.1] tracking-[-0.015em] text-ink"
+            >
+              Ein Ansprechpartner.
+              <br />
+              Eine Akte.
+            </Reveal>
+            <Reveal delay={0.1} className="mt-5 flex items-center gap-3">
+              <svg
+                viewBox="0 0 56 14"
+                aria-hidden="true"
+                className="h-3 w-12 shrink-0"
+              >
+                <path
+                  d="M2 8 C 12 4, 24 11, 36 6 C 44 4, 50 8, 54 7"
+                  stroke="#B2342A"
+                  strokeWidth="2"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+              </svg>
+              <span className="margin-note inline-block text-[clamp(26px,2.4vw,32px)] -rotate-[2deg] text-pen-red">
+                über Jahrzehnte.
+              </span>
+            </Reveal>
+          </div>
 
           <div className="col-span-12 flex flex-col md:col-span-6 md:col-start-7">
             {BENEFITS.map((b, i) => (
