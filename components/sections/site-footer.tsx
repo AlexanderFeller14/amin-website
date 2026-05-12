@@ -84,11 +84,11 @@ export function SiteFooter() {
         <div className="mt-16 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-5 text-[11px] uppercase tracking-[0.08em] text-ink-muted">
           <span>© 2026 Amin Finanzberatung · Zollikofen</span>
           <span>
-            <Link href="#" className="hover:text-ink">
+            <Link href="/impressum" className="hover:text-ink">
               Impressum
             </Link>{" "}
             ·{" "}
-            <Link href="#" className="hover:text-ink">
+            <Link href="/datenschutz" className="hover:text-ink">
               Datenschutz
             </Link>
           </span>
