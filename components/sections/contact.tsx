@@ -19,30 +19,20 @@ import {
 
 const META = [
   {
-    lbl: "Büro Zürich",
+    lbl: "Standort",
     val: (
       <>
-        Stampfenbachstrasse&nbsp;48
+        Swiss Life Select
         <br />
-        8006 Zürich
-      </>
-    ),
-  },
-  {
-    lbl: "Büro Bern",
-    val: (
-      <>
-        Marktgasse&nbsp;31
-        <br />
-        3011 Bern
+        3052 Zollikofen
       </>
     ),
   },
   {
     lbl: "Telefon",
     val: (
-      <a className="hover:text-signal" href="tel:+41442001234">
-        +41&nbsp;44&nbsp;200&nbsp;12&nbsp;34
+      <a className="hover:text-signal" href="tel:+41313000000">
+        +41&nbsp;31&nbsp;300&nbsp;00&nbsp;00
       </a>
     ),
   },
@@ -64,7 +54,6 @@ const META = [
       </>
     ),
   },
-  { lbl: "Reaktion", val: <>∅ 4&nbsp;Std. werktags</> },
 ];
 
 export function Contact() {
@@ -81,7 +70,7 @@ export function Contact() {
       />
 
       <div className="wrap relative z-[2]">
-        <SectionHead index="07" kicker="— Kontakt" variant="dark">
+        <SectionHead index="07" kicker="Kontakt" variant="dark">
           Reden wir.{" "}
           <em className="italic text-signal">45 Minuten,</em> keine
           Verpflichtung.
@@ -93,7 +82,7 @@ export function Contact() {
               as="p"
               className="font-serif text-[clamp(28px,3vw,42px)] font-light italic leading-[1.15] tracking-[-0.015em] text-bone"
             >
-              Wir nehmen jährlich nur eine begrenzte Zahl neuer Mandate an —
+              Wir nehmen jährlich nur eine begrenzte Zahl neuer Mandate an,
               damit jede Beratung die Tiefe bekommt, die sie verdient.
             </Reveal>
 
@@ -231,7 +220,7 @@ export function Contact() {
                   type="submit"
                   className="rounded-none bg-ink px-5 py-3.5 text-[13.5px] text-bone hover:bg-green-deep"
                 >
-                  {sent ? "Vielen Dank — wir melden uns." : "Anfrage senden"}
+                  {sent ? "Vielen Dank, wir melden uns." : "Anfrage senden"}
                   {!sent && (
                     <ArrowRight className="ml-2 h-3.5 w-3.5" strokeWidth={1.5} />
                   )}

@@ -1,12 +1,12 @@
 const ITEMS = [
-  "FINMA-konform beraten",
-  "Honorarbasiert seit 2011",
-  "Keine Bankenbindung",
+  "Beraterpartner von Swiss Life Select",
+  "Vorsorge mit Schweizer Tradition",
+  "Erstgespräch kostenlos",
   "Säule 3a optimieren",
   "Pensionskasse vergleichen",
   "Versicherungs-Check",
-  "ETF-Sparpläne",
-  "Steuern reduzieren",
+  "Vermögensaufbau",
+  "Steuern planen",
 ];
 
 function Item({ label }: { label: string }) {

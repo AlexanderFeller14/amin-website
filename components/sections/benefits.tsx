@@ -5,28 +5,18 @@ import { SectionHead } from "@/components/section-head";
 const BENEFITS = [
   {
     ix: "/01",
-    title: "Unabhängig — strukturell.",
-    body: "Keine Verkaufsprovisionen, keine Kick-Backs, keine Anbieterbindungen. Wir veröffentlichen unsere Zusammenarbeitsstruktur jährlich.",
+    title: "Persönlich, nicht delegiert.",
+    body: "Sie sprechen mit dem Berater, der Ihre Akte kennt. Antwort innerhalb 24h.",
   },
   {
     ix: "/02",
-    title: "Honorarbasiert & transparent.",
-    body: "Festes Honorar, kommuniziert vor Beginn. Keine versteckten Gebühren, keine Folgekosten ohne Ihre Zustimmung.",
+    title: "Erstgespräch kostenlos.",
+    body: "45 Minuten, bei Ihnen, im Büro oder online. Ohne Verpflichtung.",
   },
   {
     ix: "/03",
-    title: "FINMA-konform & reguliert.",
-    body: "Mitglied OAK BV — Aufsichtskommission berufliche Vorsorge. Beratung nach FIDLEG. Berufshaftpflicht CHF 5 Mio.",
-  },
-  {
-    ix: "/04",
-    title: "Persönlich, nicht delegiert.",
-    body: "Sie sprechen mit dem Berater, der Ihre Akte kennt — nicht mit einem Callcenter. Erreichbarkeit innerhalb 24h.",
-  },
-  {
-    ix: "/05",
-    title: "Daten in der Schweiz.",
-    body: "Verschlüsselter Datenraum gehostet in Zürich (Swiss Cloud). Keine Auswertung durch Dritte, keine Cookies für Werbung.",
+    title: "Breites Produkt-Netzwerk.",
+    body: "Als Beraterpartner von Swiss Life Select Zugang zu Schweizer Versicherern, Banken und Vorsorge-Anbietern.",
   },
 ];
 
@@ -37,7 +27,7 @@ export function Benefits() {
       className="relative py-[clamp(72px,10vw,140px)]"
     >
       <div className="wrap">
-        <SectionHead index="04" kicker="— Vorteile">
+        <SectionHead index="04" kicker="Vorteile">
           Warum Kundinnen und Kunden uns ihre{" "}
           <em className="italic text-green">Finanzen</em> anvertrauen.
         </SectionHead>
@@ -47,11 +37,10 @@ export function Benefits() {
             as="p"
             className="col-span-12 font-serif text-[clamp(22px,2.2vw,30px)] font-light leading-[1.28] tracking-[-0.008em] text-ink-2 md:col-span-5"
           >
-            Wir sind keine Bank, keine Versicherung und kein
-            Multi-Level-Anbieter.{" "}
-            <em className="italic text-green">Wir arbeiten für Sie</em> — und
-            werden nur von Ihnen bezahlt. Das ist der Unterschied, der alles
-            ändert.
+            Beratung, die langfristig denkt. Vom ersten 3a bis zur
+            Pensionierung.{" "}
+            <em className="italic text-green">Ein Ansprechpartner, eine Akte,</em>{" "}
+            über Jahre. Das ist der Unterschied, der alles ändert.
           </Reveal>
 
           <div className="col-span-12 flex flex-col md:col-span-6 md:col-start-7">

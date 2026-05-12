@@ -46,7 +46,7 @@ export function BrandWordmark({
         <em
           className={`not-italic font-serif italic text-green ${emClassName ?? ""}`}
         >
-          Vermögensberatung
+          Finanzberatung
         </em>
       </span>
     </span>

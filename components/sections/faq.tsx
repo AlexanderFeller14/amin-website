@@ -6,39 +6,31 @@ import { useEffect, useRef } from "react";
 
 const QA = [
   {
-    q: "Wie verdient ihr Geld, wenn ihr keine Provisionen nehmt?",
-    a: "Ausschliesslich durch ein festes Honorar, das Sie vor der Mandatsannahme schriftlich erhalten. Wir nehmen weder Provisionen von Versicherern noch Vermittlungsentschädigungen von Banken oder Fondsanbietern an. Sollten dennoch Retrozessionen auf Produkte anfallen, die wir empfehlen, werden diese vollständig an Sie weitergegeben — bilanziert und ausgewiesen.",
+    q: "Was kostet die Beratung?",
+    a: "Das Erstgespräch ist kostenlos und unverbindlich. Versicherungs- und Vorsorgelösungen werden über die Anbieter finanziert, daher fallen für Sie in der Regel keine direkten Honorare an. Komplexere, separat beauftragte Analysen werden vor Beginn schriftlich vereinbart.",
   },
   {
-    q: "Was kostet eine vollständige Beratung?",
-    a: "Einzelmandate beginnen bei CHF 480 (Sparplan), umfassende Mandate inkl. Vorsorge und Vermögen liegen typischerweise zwischen CHF 1’800 und CHF 3’400 — einmalig. Die Begleitung im Folgejahr ist optional (CHF 540/Jahr). Wir nennen den Preis verbindlich vor Beginn.",
+    q: "Wer ist Swiss Life Select?",
+    a: "Swiss Life Select ist die Beratungsorganisation der Swiss Life Gruppe in der Schweiz. Als Beraterpartner habe ich Zugang zu Swiss-Life-Produkten sowie zu einem Netzwerk weiterer Versicherer, Banken und Vorsorge-Anbieter. So lässt sich für jede Situation eine passende Lösung wählen.",
   },
   {
-    q: "Welche Versicherungen prüft ihr?",
-    a: "Krankenkasse (Grund- und Zusatzversicherung), Privathaftpflicht, Hausrat, Lebens- und Risikolebensversicherung, Berufs- und Erwerbsunfähigkeit, Motorfahrzeug, Rechtsschutz sowie Zusatzangebote der Pensionskasse. Bei Selbständigen zusätzlich BVG, UVG und Krankentaggeld.",
+    q: "Welche Versicherungen prüfe ich?",
+    a: "Krankenkasse (Grund- und Zusatzversicherung), Privathaftpflicht, Hausrat, Lebens- und Risikolebensversicherung, Berufs- und Erwerbsunfähigkeit, Motorfahrzeug, Rechtsschutz sowie Vorsorgelösungen der Pensionskasse. Bei Selbständigen zusätzlich BVG, UVG und Krankentaggeld.",
   },
   {
-    q: "Wie unabhängig seid ihr wirklich?",
-    a: "Wir sind weder Teil einer Bank, einer Versicherung noch eines Strukturvertriebs. Unsere Aktionäre sind ausschliesslich die zwei geschäftsführenden Berater. Wir veröffentlichen jährlich eine Übersicht, mit welchen Anbietern wir wie oft empfohlen haben — Sie können nachsehen.",
+    q: "Wie lange dauert eine Beratung?",
+    a: "Vom Erstgespräch bis zur Empfehlung 4 bis 6 Wochen. Umsetzung (Kündigungen, Anbieterwechsel, neue Anträge) weitere 4 bis 12 Wochen, je nach Vertrag. Sie erhalten zu jedem Zeitpunkt einen klaren Statusbericht.",
   },
   {
-    q: "Was ist die Säule 3a — und warum lohnt sie sich?",
-    a: "Die Säule 3a ist die private, steuerbegünstigte Vorsorge in der Schweiz. Einzahlungen sind bis CHF 7’258 (Angestellte, 2026) vom steuerbaren Einkommen abziehbar. Bei einem Grenzsteuersatz von 30 % entspricht das einer sofortigen Rendite von rund 2’100 CHF pro Einzahlungsjahr — vor jedem Anlageerfolg.",
-  },
-  {
-    q: "Wie lange dauert ein Beratungsprozess?",
-    a: "Vom Erstgespräch bis zur Empfehlung typischerweise 4 bis 6 Wochen. Die Umsetzung (Kündigungen, Anbieterwechsel, neue Anträge) übernehmen wir, sofern Sie das wünschen — das dauert je nach Vertrag weitere 4 bis 12 Wochen.",
-  },
-  {
-    q: "Bekommen meine Daten andere zu Gesicht?",
-    a: "Nein. Ihre Unterlagen werden in einem verschlüsselten Datenraum auf Schweizer Servern (Infomaniak Swiss Backup, ISO 27001) abgelegt. Zugriff haben ausschliesslich die zwei beratenden Personen. Nach Mandatsende werden Ihre Daten auf Wunsch innerhalb 30 Tagen gelöscht — wir bestätigen schriftlich.",
+    q: "Wer sieht meine Daten?",
+    a: "Ihre Unterlagen werden vertraulich behandelt und nur für die Beratung verwendet. Die Datenverarbeitung erfolgt nach Schweizer Datenschutzgesetz; auf Wunsch Löschung nach Mandatsende, schriftlich bestätigt.",
   },
 ];
 
 export function Faq() {
   const listRef = useRef<HTMLDivElement>(null);
 
-  // accordion behavior — open only one at a time
+  // accordion behavior, open only one at a time
   useEffect(() => {
     const root = listRef.current;
     if (!root) return;
@@ -60,7 +52,7 @@ export function Faq() {
   return (
     <section id="faq" className="relative py-[clamp(72px,10vw,140px)]">
       <div className="wrap">
-        <SectionHead index="06" kicker="— Häufige Fragen">
+        <SectionHead index="06" kicker="Häufige Fragen">
           Was Sie vor dem Erstgespräch{" "}
           <em className="italic text-green">noch wissen</em> sollten.
         </SectionHead>
@@ -68,14 +60,14 @@ export function Faq() {
         <div className="grid grid-cols-12 gap-6">
           <Reveal className="col-span-12 self-start md:col-span-4 md:sticky md:top-24">
             <p className="max-w-[30ch] font-serif text-[clamp(20px,1.8vw,26px)] font-light leading-[1.3] tracking-[-0.005em] text-ink-2">
-              Wenn Ihre Frage nicht dabei ist — schreiben Sie uns.{" "}
+              Wenn Ihre Frage nicht dabei ist, schreiben Sie uns.{" "}
               <em className="italic text-green">
                 Wir antworten persönlich,
               </em>{" "}
               meist am gleichen Tag.
             </p>
             <div className="mt-6 text-[11px] uppercase tracking-[0.1em] text-ink-muted">
-              Direkter Draht —{" "}
+              Direkter Draht:{" "}
               <a
                 href="mailto:hallo@amin-finanz.ch"
                 className="border-b border-ink pb-0.5 text-ink"

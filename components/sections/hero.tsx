@@ -24,21 +24,6 @@ const TITLE_LINES = [
   ),
 ];
 
-const STATS = [
-  {
-    num: "4’238",
-    sup: "CHF",
-    lbl: "Ø jährliche Ersparnis pro Mandat im Vorjahr",
-  },
-  { num: "473", sup: null, lbl: "Haushalte beraten seit 2011" },
-  {
-    num: "0",
-    em: "%",
-    lbl: "Verkaufsprovisionen — wir sind reine Honorarberater",
-  },
-  { num: "4.9", suffix: "/5", lbl: "Bewertung Google & Trustpilot · 168 Bewertungen" },
-] as const;
-
 export function Hero() {
   const reduce = useReducedMotion();
 
@@ -59,27 +44,27 @@ export function Hero() {
         {/* meta strip */}
         <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-line pb-6 text-[11px] uppercase tracking-[0.14em] text-ink-2">
           <span className="inline-flex items-baseline gap-2.5">
-            <span className="text-ink-muted">Ausgabe</span>
-            <span className="tabular">04 — 2026</span>
-          </span>
-          <span className="text-ink-muted-2">/</span>
-          <span className="inline-flex items-baseline gap-2.5">
             <span className="text-ink-muted">Standort</span>
-            <span>Zürich · Bern · Online</span>
+            <span>Zollikofen · Online</span>
           </span>
           <span className="text-ink-muted-2">/</span>
           <span className="inline-flex items-baseline gap-2.5">
-            <span className="text-ink-muted">Mandat seit</span>
-            <span className="tabular">2011</span>
+            <span className="text-ink-muted">Beraterpartner</span>
+            <span>Swiss Life Select</span>
+          </span>
+          <span className="text-ink-muted-2">/</span>
+          <span className="inline-flex items-baseline gap-2.5">
+            <span className="text-ink-muted">Themen</span>
+            <span>Vorsorge · Versicherung · Vermögen</span>
           </span>
           <span className="text-ink-muted-2">/</span>
           <span className="inline-flex items-baseline gap-2.5">
             <span className="text-ink-muted">Status</span>
-            <span className="text-green">Termine Mai verfügbar</span>
+            <span className="text-green">Termine verfügbar</span>
           </span>
         </div>
 
-        {/* title — masked staggered reveal */}
+        {/* title, masked staggered reveal */}
         <h1 className="mt-[clamp(40px,7vw,80px)] font-serif text-[clamp(40px,7.5vw,112px)] font-light leading-[1.0] tracking-[-0.02em] text-ink">
           {TITLE_LINES.map((line, i) => (
             <span key={i} className="block overflow-hidden pb-[0.08em]">
@@ -102,10 +87,10 @@ export function Hero() {
         {/* lead + ctas */}
         <div className="mt-[clamp(36px,5vw,72px)] grid grid-cols-12 gap-6 border-t border-line pt-7">
           <p className="col-span-12 max-w-[42ch] font-serif text-[clamp(18px,1.6vw,22px)] font-light leading-[1.42] tracking-[-0.005em] text-ink-2 md:col-span-6">
-            <em className="italic text-green">Honorarbasiert und unabhängig.</em>{" "}
-            Vom ersten Sparplan bis zur Pensionierung. Wir zeigen, wo Sie jährlich{" "}
-            <DoodleCircle delay={1.9}>vierstellig sparen</DoodleCircle>, ohne dass
-            Ihnen etwas verkauft wird.
+            <em className="italic text-green">Persönliche Beratung</em> für
+            Vorsorge, Versicherung und Vermögen. Vom ersten Sparplan bis zur
+            Pensionierung.{" "}
+            <DoodleCircle delay={1.9}>Erstgespräch kostenlos.</DoodleCircle>
           </p>
 
           <div className="col-span-12 flex flex-col items-start gap-3.5 md:col-span-5 md:col-start-8">
@@ -131,33 +116,6 @@ export function Hero() {
           </div>
         </div>
 
-        {/* stats */}
-        <div className="mt-[clamp(60px,8vw,108px)] grid grid-cols-12 gap-6 border-t border-line pt-7">
-          {STATS.map((s, i) => (
-            <div
-              key={i}
-              className="relative col-span-12 flex flex-col gap-2 sm:col-span-6 lg:col-span-3 [&:not(:last-child)]:lg:after:absolute [&:not(:last-child)]:lg:after:right-[-12px] [&:not(:last-child)]:lg:after:top-0 [&:not(:last-child)]:lg:after:h-full [&:not(:last-child)]:lg:after:w-px [&:not(:last-child)]:lg:after:bg-line-soft [&:not(:last-child)]:lg:after:content-['']"
-            >
-              <div className="font-serif text-[clamp(40px,5.5vw,84px)] font-light leading-[0.95] tracking-[-0.02em] tabular">
-                {s.num}
-                {"em" in s && s.em ? (
-                  <em className="italic text-green">{s.em}</em>
-                ) : null}
-                {"sup" in s && s.sup ? (
-                  <sup className="ml-[0.05em] align-[1.6em] font-sans text-[0.32em] font-medium tracking-[0.06em] text-ink-muted">
-                    {s.sup}
-                  </sup>
-                ) : null}
-                {"suffix" in s && s.suffix ? (
-                  <span className="text-[0.4em] text-ink-muted">{s.suffix}</span>
-                ) : null}
-              </div>
-              <div className="max-w-[22ch] text-[11px] uppercase tracking-[0.1em] text-ink-muted">
-                {s.lbl}
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

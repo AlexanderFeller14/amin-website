@@ -17,13 +17,13 @@ const STEPS = [
   {
     n: "03",
     title: "Empfehlung",
-    body: "Sie erhalten einen klaren Bericht. Was bleibt, was geht, was sich verbessert — mit Zahlen, nicht mit Bauchgefühl.",
+    body: "Sie erhalten einen klaren Bericht. Was bleibt, was geht, was sich verbessert. Mit Zahlen, nicht mit Bauchgefühl.",
     dur: "90-Min-Termin · schriftlicher Plan",
   },
   {
     n: "04",
     title: "Umsetzung",
-    body: "Sie entscheiden, wir begleiten. Kündigungen, Anträge, Anbieterwechsel — wir nehmen Ihnen den Papierkram ab. Jahres-Review inklusive.",
+    body: "Sie entscheiden, wir begleiten. Kündigungen, Anträge, Anbieterwechsel. Wir nehmen Ihnen den Papierkram ab. Jahres-Review inklusive.",
     dur: "Begleitung 12 Monate",
   },
 ];
@@ -35,8 +35,8 @@ export function Process() {
       className="relative bg-green-deep py-[clamp(72px,10vw,140px)] text-bone"
     >
       <div className="wrap">
-        <SectionHead index="03" kicker="— Vorgehen" variant="dark">
-          Vier Schritte — vom ersten Gespräch bis zum{" "}
+        <SectionHead index="03" kicker="Vorgehen" variant="dark">
+          Vier Schritte, vom ersten Gespräch bis zum{" "}
           <em className="italic text-signal">messbaren Resultat.</em>
         </SectionHead>
 

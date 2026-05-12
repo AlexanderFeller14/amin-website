@@ -51,12 +51,12 @@ export function SiteFooter() {
             >
               <BrandMark className="h-[22px] w-[22px] text-ink" />
               <span>
-                Amin&nbsp;<em className="italic text-green">Vermögensberatung</em>
+                Amin&nbsp;<em className="italic text-green">Finanzberatung</em>
               </span>
             </Link>
             <p className="max-w-[30ch] font-serif text-[18px] font-light leading-[1.35] tracking-[-0.005em] text-ink-2">
-              Unabhängige, honorarbasierte Finanzberatung aus Zürich und Bern
-              — seit 2011.
+              Persönliche Finanzberatung in Zollikofen. Beraterpartner von Swiss
+              Life Select.
             </p>
           </div>
 
@@ -82,8 +82,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-16 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-5 text-[11px] uppercase tracking-[0.08em] text-ink-muted">
-          <span>© 2011–2026 Amin Vermögensberatung AG · CHE-128.402.991</span>
-          <span>FINMA / OAK BV · FIDLEG-konform</span>
+          <span>© 2026 Amin Finanzberatung · Swiss Life Select Beraterpartner</span>
           <span>
             <Link href="#" className="hover:text-ink">
               Impressum
@@ -91,10 +90,6 @@ export function SiteFooter() {
             ·{" "}
             <Link href="#" className="hover:text-ink">
               Datenschutz
-            </Link>{" "}
-            ·{" "}
-            <Link href="#" className="hover:text-ink">
-              AGB
             </Link>
           </span>
         </div>

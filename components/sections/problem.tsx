@@ -5,30 +5,23 @@ const ITEMS = [
   {
     idx: "01",
     title: "Doppelte Versicherungsdeckung.",
-    body: "Hausrat, Privathaftpflicht und Zusatzversicherungen überschneiden sich in 6 von 10 Mandaten — durchschnittlich.",
+    body: "Hausrat, Haftpflicht und Zusatzversicherungen überschneiden sich in 6 von 10 Mandaten.",
     figure: "CHF 712",
     unit: "/Jahr",
   },
   {
     idx: "02",
     title: "Säule 3a auf dem Sparkonto.",
-    body: "Bei einem 35-jährigen Berufstätigen ergibt das nach 30 Jahren — verglichen mit einem indexierten 3a-Depot — einen Unterschied im sechsstelligen Bereich.",
+    body: "Nach 30 Jahren ein sechsstelliger Unterschied, verglichen mit einem 3a-Depot.",
     figure: "CHF 184’500",
     unit: null,
   },
   {
     idx: "03",
     title: "Krankenkasse ungeprüft.",
-    body: "Nur 18 % der Versicherten vergleichen jährlich. Eine Prämienoptimierung bei gleicher Deckung spart im Durchschnitt:",
+    body: "Nur 18 % vergleichen jährlich. Bei gleicher Deckung spart eine Optimierung:",
     figure: "CHF 1’420",
     unit: "/Jahr",
-  },
-  {
-    idx: "04",
-    title: "Beratung mit Eigeninteresse.",
-    body: "Klassische Vermögensberater verdienen an Produkten, die sie verkaufen. Die Lösungen sind selten die günstigsten — aber meistens die profitabelsten für die Bank.",
-    figure: "∅",
-    unit: "stille Gebühren",
   },
 ];
 
@@ -39,7 +32,7 @@ export function Problem() {
       className="relative py-[clamp(72px,10vw,140px)]"
     >
       <div className="wrap">
-        <SectionHead index="01" kicker="— Das Problem">
+        <SectionHead index="01" kicker="Das Problem">
           Die meisten Haushalte verlieren Geld nicht durch grosse Fehler,
           sondern durch{" "}
           <em className="italic text-green">viele kleine.</em>
@@ -51,7 +44,7 @@ export function Problem() {
             className="col-span-12 font-serif text-[clamp(20px,2vw,28px)] font-light leading-[1.32] tracking-[-0.005em] text-ink-2 md:col-span-5"
           >
             Schweizer Familien zahlen im Schnitt für Versicherungen, die sie
-            doppelt haben — und sparen in der Säule 3a auf Konten, die seit
+            doppelt haben, und sparen in der Säule 3a auf Konten, die seit
             Jahren{" "}
             <em className="italic text-green">real an Wert verlieren.</em>{" "}
             Wir machen sichtbar, was bisher unsichtbar war.

@@ -19,11 +19,11 @@ export function SiteHeader() {
           <Link
             href="#top"
             className="flex items-center gap-2.5 font-serif text-[20px] leading-none tracking-[-0.01em]"
-            aria-label="Amin Vermögensberatung"
+            aria-label="Amin Finanzberatung"
           >
             <BrandMark className="h-[22px] w-[22px] text-ink" />
             <span>
-              Amin&nbsp;<em className="italic text-green">Vermögensberatung</em>
+              Amin&nbsp;<em className="italic text-green">Finanzberatung</em>
             </span>
           </Link>
 

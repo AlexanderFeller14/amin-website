@@ -5,7 +5,7 @@ import { Avatar } from "@/components/avatar";
 const TESTIS = [
   {
     quote:
-      "Wir dachten, wir hätten alles im Griff. Nach dem Check wurde sichtbar, dass wir drei Versicherungen mit fast identischer Deckung zahlten. Was uns am meisten beeindruckt hat: es wurde uns nichts neu verkauft — nur reduziert.",
+      "Wir dachten, wir hätten alles im Griff. Nach dem Check wurde sichtbar, dass wir drei Versicherungen mit fast identischer Deckung zahlten. Herr Amin hat in Ruhe erklärt, was wirklich gebraucht wird und was wir bedenkenlos kündigen können.",
     name: "Andrea Keller & Familie",
     meta: ["Lehrerin, 42 · Winterthur", "Mandat seit 2023"],
     saved: "CHF 3’180",
@@ -16,7 +16,7 @@ const TESTIS = [
   },
   {
     quote:
-      "Als ich angefangen habe Vollzeit zu arbeiten, hatte ich keine Ahnung von 3a oder ETFs. Statt mir ein Produkt zu verkaufen, hat mir Herr Amin in 90 Minuten erklärt, wie es zusammenhängt. Heute spare ich strukturiert — und verstehe wofür.",
+      "Als ich angefangen habe Vollzeit zu arbeiten, hatte ich keine Ahnung von 3a oder ETFs. Herr Amin hat sich Zeit genommen, mir in 90 Minuten zu erklären, wie alles zusammenhängt. Heute spare ich strukturiert. Und verstehe wofür.",
     name: "Tobias Schmid",
     meta: ["UX Engineer, 29 · Zürich", "Mandat seit 2024"],
     saved: "+CHF 9’600",
@@ -27,7 +27,7 @@ const TESTIS = [
   },
   {
     quote:
-      "Wir hatten vor der Pensionierung Angst, etwas Wichtiges zu übersehen. Der Bericht war ehrlich — auch dort, wo wir gut aufgestellt waren. Das hat Vertrauen geschaffen, das wir bei der Bank vermisst haben.",
+      "Wir hatten vor der Pensionierung Angst, etwas Wichtiges zu übersehen. Der Bericht war ehrlich, auch dort, wo wir gut aufgestellt waren. Das hat Vertrauen geschaffen, das wir bei der Bank vermisst haben.",
     name: "Heinz & Mira Hofmann",
     meta: ["Architekt & Pflegefachfrau, 58/56 · Bern", "Mandat seit 2022"],
     saved: "CHF 41’200",
@@ -48,7 +48,7 @@ export function Testimonials() {
       <span className="deckle-bottom" aria-hidden="true" />
 
       <div className="wrap">
-        <SectionHead index="05" kicker="— Kundenstimmen">
+        <SectionHead index="05" kicker="Kundenstimmen">
           Was Mandantinnen und Mandanten nach{" "}
           <em className="italic text-green">einem Jahr</em> berichten.
         </SectionHead>

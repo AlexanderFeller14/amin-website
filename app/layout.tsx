@@ -17,9 +17,9 @@ const sans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Amin Vermögensberatung — Unabhängige Finanzberatung in der Schweiz",
+  title: "Amin Finanzberatung. Vorsorge, Versicherung und Vermögen aus Zollikofen",
   description:
-    "Honorarbasierte, unabhängige Finanzberatung aus Zürich. Versicherungs-Check, Vorsorge, Sparen und Vermögensaufbau — ohne Provisionen, ohne Verkauf.",
+    "Persönliche Finanzberatung in Zollikofen. Vorsorge, Versicherung und Vermögensaufbau, vom ersten Sparplan bis zur Pensionierung. Erstgespräch kostenlos.",
 };
 
 export default function RootLayout({
