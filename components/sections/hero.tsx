@@ -45,9 +45,9 @@ export function Hero() {
                 Persönliche Finanzberatung
               </span>
               <span aria-hidden="true">·</span>
-              <span>Zollikofen</span>
+              <span>Büro Zollikofen</span>
               <span aria-hidden="true">·</span>
-              <span>Beraterpartner Swiss Life Select</span>
+              <span>Termin vor Ort möglich</span>
             </div>
 
             <div className="relative mt-[clamp(36px,5vw,72px)] grid grid-cols-12 gap-x-[clamp(20px,4vw,56px)] gap-y-10">
@@ -73,8 +73,8 @@ export function Hero() {
                   <div className="relative aspect-[3/4] w-full -rotate-[1.2deg] overflow-hidden border border-ink/40 bg-bone-2 shadow-[0_2px_4px_rgba(26,23,15,0.12),0_10px_24px_-8px_rgba(26,23,15,0.22)]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src="/portrait.png"
-                      alt="Portrait Amin Barazza"
+                      src="/portrait.jpeg"
+                      alt="Portrait Amin Barraza"
                       className="absolute inset-0 h-full w-full object-cover object-center"
                     />
                     {/* tape strips at corners: small amber rectangles */}
@@ -93,10 +93,10 @@ export function Hero() {
                       Berater
                     </span>
                     <span className="font-serif text-[17px] leading-tight text-ink">
-                      Amin Barazza
+                      Amin Barraza
                     </span>
                     <span className="text-[12.5px] text-ink-muted">
-                      Swiss Life Select · Zollikofen
+                      Beratung in Zollikofen oder vor Ort
                     </span>
                   </figcaption>
                 </div>
@@ -193,7 +193,7 @@ export function Hero() {
                       className="font-serif text-[34px] italic font-light leading-none text-pen-red -rotate-[3deg]"
                       style={{ letterSpacing: "0.01em" }}
                     >
-                      Amin Barazza
+                      Amin Barraza
                     </span>
                     <span className="text-[10px] uppercase tracking-[0.2em] text-ink-muted-2">
                       Signatur · Platzhalter

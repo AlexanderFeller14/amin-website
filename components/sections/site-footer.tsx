@@ -32,8 +32,11 @@ const COLS = [
   {
     title: "Kontakt",
     links: [
-      { href: "mailto:hallo@amin-finanz.ch", label: "hallo@amin-finanz.ch" },
-      { href: "tel:+41442001234", label: "+41 44 200 12 34" },
+      {
+        href: "mailto:amin.barraza@swisslife-select.ch",
+        label: "amin.barraza@swisslife-select.ch",
+      },
+      { href: "tel:+41764674002", label: "+41 76 467 40 02" },
       { href: "#kontakt", label: "Termin buchen" },
     ],
   },
@@ -55,8 +58,8 @@ export function SiteFooter() {
               </span>
             </Link>
             <p className="max-w-[30ch] font-serif text-[18px] font-light leading-[1.35] tracking-[-0.005em] text-ink-2">
-              Persönliche Finanzberatung in Zollikofen. Beraterpartner von Swiss
-              Life Select.
+              Persönliche Finanzberatung in Zollikofen. Termin im Büro oder bei
+              Ihnen vor Ort.
             </p>
           </div>
 
@@ -82,7 +85,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-16 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-5 text-[11px] uppercase tracking-[0.08em] text-ink-muted">
-          <span>© 2026 Amin Finanzberatung · Swiss Life Select Beraterpartner</span>
+          <span>© 2026 Amin Finanzberatung · Zollikofen</span>
           <span>
             <Link href="#" className="hover:text-ink">
               Impressum

@@ -39,7 +39,8 @@ export function Services() {
 
       <div className="wrap">
         <SectionHead index="02" kicker="Leistungen">
-          Vier Bereiche, ein Auftrag:{" "}
+          Vier Bereiche, ein Auftrag:
+          <br />
           <em className="italic text-green">Klarheit</em> über Ihre Finanzen.
         </SectionHead>
 

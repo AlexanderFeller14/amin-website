@@ -16,7 +16,7 @@ const BENEFITS = [
   {
     ix: "/03",
     title: "Breites Produkt-Netzwerk.",
-    body: "Als Beraterpartner von Swiss Life Select Zugang zu Schweizer Versicherern, Banken und Vorsorge-Anbietern.",
+    body: "Zugang zu einem breiten Netzwerk Schweizer Versicherer, Banken und Vorsorge-Anbieter. Lösung passt zur Situation, nicht zum Anbieter.",
   },
 ];
 

@@ -10,8 +10,8 @@ const QA = [
     a: "Das Erstgespräch ist kostenlos und unverbindlich. Versicherungs- und Vorsorgelösungen werden über die Anbieter finanziert, daher fallen für Sie in der Regel keine direkten Honorare an. Komplexere, separat beauftragte Analysen werden vor Beginn schriftlich vereinbart.",
   },
   {
-    q: "Wer ist Swiss Life Select?",
-    a: "Swiss Life Select ist die Beratungsorganisation der Swiss Life Gruppe in der Schweiz. Als Beraterpartner habe ich Zugang zu Swiss-Life-Produkten sowie zu einem Netzwerk weiterer Versicherer, Banken und Vorsorge-Anbieter. So lässt sich für jede Situation eine passende Lösung wählen.",
+    q: "Wo findet die Beratung statt?",
+    a: "Sie haben die Wahl: Termin im Büro an der Bernstrasse 162 in Zollikofen oder bei Ihnen vor Ort, je nachdem was besser in Ihren Alltag passt. Auf Wunsch ist auch ein Termin per Videocall möglich.",
   },
   {
     q: "Welche Versicherungen prüfe ich?",
@@ -69,10 +69,10 @@ export function Faq() {
             <div className="mt-6 text-[11px] uppercase tracking-[0.1em] text-ink-muted">
               Direkter Draht:{" "}
               <a
-                href="mailto:hallo@amin-finanz.ch"
+                href="mailto:amin.barraza@swisslife-select.ch"
                 className="border-b border-ink pb-0.5 text-ink"
               >
-                hallo@amin-finanz.ch
+                amin.barraza@swisslife-select.ch
               </a>
             </div>
           </Reveal>

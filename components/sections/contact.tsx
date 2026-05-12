@@ -22,25 +22,32 @@ const META = [
     lbl: "Standort",
     val: (
       <>
-        Swiss Life Select
+        Bernstrasse 162
         <br />
         3052 Zollikofen
+        <br />
+        <span className="mt-1 inline-block text-[14px] text-bone-2">
+          oder bei Ihnen vor Ort
+        </span>
       </>
     ),
   },
   {
     lbl: "Telefon",
     val: (
-      <a className="hover:text-signal" href="tel:+41313000000">
-        +41&nbsp;31&nbsp;300&nbsp;00&nbsp;00
+      <a className="hover:text-signal" href="tel:+41764674002">
+        +41&nbsp;76&nbsp;467&nbsp;40&nbsp;02
       </a>
     ),
   },
   {
     lbl: "E-Mail",
     val: (
-      <a className="hover:text-signal" href="mailto:hallo@amin-finanz.ch">
-        hallo@amin-finanz.ch
+      <a
+        className="break-all hover:text-signal"
+        href="mailto:amin.barraza@swisslife-select.ch"
+      >
+        amin.barraza@swisslife-select.ch
       </a>
     ),
   },
@@ -88,9 +95,9 @@ export function Contact() {
 
             <Reveal delay={0.08}>
               <span className="signature" style={{ color: "var(--signal)" }}>
-                R. Amin
+                Amin Barraza
                 <small className="mt-2 block rotate-[3deg] font-sans text-[10px] font-medium not-italic uppercase tracking-[0.12em] text-bone-2">
-                  Geschäftsführer · seit 2011
+                  Persönlicher Finanzberater
                 </small>
               </span>
             </Reveal>

@@ -1,5 +1,5 @@
 const ITEMS = [
-  "Beraterpartner von Swiss Life Select",
+  "Termin im Büro oder vor Ort",
   "Vorsorge mit Schweizer Tradition",
   "Erstgespräch kostenlos",
   "Säule 3a optimieren",
