@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { SectionHead } from "@/components/section-head";
 
@@ -194,7 +196,7 @@ export function Services() {
             >
               <div
                 aria-hidden="true"
-                className={`pointer-events-none absolute right-7 top-7 h-[clamp(44px,5vw,64px)] w-[clamp(44px,5vw,64px)] opacity-90 transition-transform duration-500 group-hover:scale-105 ${s.tilt}`}
+                className="pointer-events-none absolute right-7 top-7 h-[clamp(44px,5vw,64px)] w-[clamp(44px,5vw,64px)] opacity-90 transition-transform duration-500 group-hover:scale-105"
               >
                 {s.icon}
               </div>
@@ -211,6 +213,19 @@ export function Services() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal
+          delay={0.2}
+          className="mt-[clamp(40px,5vw,72px)] flex justify-center"
+        >
+          <Link
+            href="#kontakt"
+            className="inline-flex items-center gap-2.5 border border-ink bg-ink px-6 py-4 text-[13.5px] text-bone transition-colors hover:bg-green-deep hover:border-green-deep"
+          >
+            Termin vereinbaren
+            <ArrowRight className="h-3.5 w-3.5" strokeWidth={1.5} />
+          </Link>
+        </Reveal>
       </div>
     </section>
   );

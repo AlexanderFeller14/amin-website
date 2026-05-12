@@ -39,10 +39,18 @@ export function CountUp({
     return () => controls.stop();
   }, [inView, to, duration, reduce]);
 
+  const target = `${prefix ?? ""}${formatSwiss(to)}`;
+  const current = `${prefix ?? ""}${formatSwiss(n)}`;
+
   return (
-    <span ref={ref} className={className}>
-      {prefix}
-      {formatSwiss(n)}
+    <span
+      ref={ref}
+      className={`relative inline-block ${className ?? ""}`}
+    >
+      <span aria-hidden="true" className="invisible">
+        {target}
+      </span>
+      <span className="absolute inset-0 text-right">{current}</span>
     </span>
   );
 }
