@@ -5,7 +5,7 @@ import { Avatar } from "@/components/avatar";
 const TESTIS = [
   {
     quote:
-      "Wir dachten, wir hätten alles im Griff. Nach dem Check wurde sichtbar, dass wir drei Versicherungen mit fast identischer Deckung zahlten. Herr Barraza hat in Ruhe erklärt, was wirklich gebraucht wird und was wir bedenkenlos kündigen können.",
+      "Wir dachten, wir hätten alles im Griff. Der Check zeigte drei Policen mit fast identischer Deckung. In Ruhe erklärt, was bleibt und was geht.",
     name: "Andrea Keller & Familie",
     meta: ["Lehrerin, 42 · Winterthur", "Mandat seit 2023"],
     saved: "CHF 3’180",
@@ -16,7 +16,7 @@ const TESTIS = [
   },
   {
     quote:
-      "Als ich angefangen habe Vollzeit zu arbeiten, hatte ich keine Ahnung von 3a oder ETFs. Herr Barraza hat sich Zeit genommen, mir in 90 Minuten zu erklären, wie alles zusammenhängt. Heute spare ich strukturiert. Und verstehe wofür.",
+      "Mit dem ersten Vollzeit-Job: keine Ahnung von 3a oder ETFs. In 90 Minuten alles erklärt. Heute spare ich strukturiert. Und verstehe wofür.",
     name: "Tobias Schmid",
     meta: ["UX Engineer, 29 · Zürich", "Mandat seit 2024"],
     saved: "+CHF 9’600",
@@ -27,7 +27,7 @@ const TESTIS = [
   },
   {
     quote:
-      "Wir hatten vor der Pensionierung Angst, etwas Wichtiges zu übersehen. Der Bericht war ehrlich, auch dort, wo wir gut aufgestellt waren. Das hat Vertrauen geschaffen, das wir bei der Bank vermisst haben.",
+      "Vor der Pensionierung die Angst, etwas zu übersehen. Der Bericht war ehrlich, auch dort, wo wir gut aufgestellt sind. Das schafft Vertrauen, das wir bei der Bank vermisst haben.",
     name: "Heinz & Mira Hofmann",
     meta: ["Architekt & Pflegefachfrau, 58/56 · Bern", "Mandat seit 2022"],
     saved: "CHF 41’200",

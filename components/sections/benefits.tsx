@@ -1,6 +1,24 @@
-import { Check } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { SectionHead } from "@/components/section-head";
+
+function PenCheck({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 32 32"
+      aria-hidden="true"
+      className={className}
+    >
+      <path
+        d="M5 17 C 7 18, 10 22, 13 25 C 16 19, 22 11, 28 6"
+        stroke="#B2342A"
+        strokeWidth="2.6"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 const BENEFITS = [
   {
@@ -61,8 +79,8 @@ export function Benefits() {
                     {b.body}
                   </span>
                 </div>
-                <span className="grid h-8 w-8 place-items-center rounded-full border border-ink transition-colors group-hover:bg-ink group-hover:text-bone">
-                  <Check className="h-3.5 w-3.5" strokeWidth={1.5} />
+                <span className="grid h-10 w-10 place-items-center rounded-full border border-ink transition-transform group-hover:scale-105">
+                  <PenCheck className="h-5 w-5 -rotate-[6deg]" />
                 </span>
               </Reveal>
             ))}

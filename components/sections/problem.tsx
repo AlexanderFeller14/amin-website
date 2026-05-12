@@ -2,6 +2,119 @@ import { CountUp } from "@/components/count-up";
 import { Reveal } from "@/components/reveal";
 import { SectionHead } from "@/components/section-head";
 
+const PEN = "#B2342A";
+const PEN_FILL = "rgba(178, 52, 42, 0.05)";
+
+function IconStackedDocs() {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" className="h-full w-full">
+      <rect
+        x="3.5"
+        y="6"
+        width="14"
+        height="18"
+        rx="1"
+        stroke={PEN}
+        strokeWidth="1.4"
+        fill={PEN_FILL}
+        transform="rotate(-5 10.5 15)"
+      />
+      <rect
+        x="14.5"
+        y="8"
+        width="14"
+        height="18"
+        rx="1"
+        stroke={PEN}
+        strokeWidth="1.4"
+        fill={PEN_FILL}
+        transform="rotate(4 21.5 17)"
+      />
+    </svg>
+  );
+}
+
+function IconCoinJar() {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" className="h-full w-full">
+      <ellipse
+        cx="16"
+        cy="9"
+        rx="11"
+        ry="3"
+        stroke={PEN}
+        strokeWidth="1.4"
+        fill={PEN_FILL}
+      />
+      <path
+        d="M5 9 L 5 23 C 5 25.5, 11 27, 16 27 C 21 27, 27 25.5, 27 23 L 27 9"
+        stroke={PEN}
+        strokeWidth="1.4"
+        fill="none"
+      />
+      <path
+        d="M5 16 C 5 18, 11 19.5, 16 19.5 C 21 19.5, 27 18, 27 16"
+        stroke={PEN}
+        strokeWidth="1.2"
+        fill="none"
+        opacity="0.55"
+      />
+      <line
+        x1="13"
+        y1="6"
+        x2="19"
+        y2="6"
+        stroke={PEN}
+        strokeWidth="1.4"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+function IconHealthCard() {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" className="h-full w-full">
+      <rect
+        x="3"
+        y="7"
+        width="26"
+        height="18"
+        rx="2"
+        stroke={PEN}
+        strokeWidth="1.4"
+        fill={PEN_FILL}
+      />
+      <path
+        d="M9 13 L 9 19 M6 16 L 12 16"
+        stroke={PEN}
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+      <line
+        x1="16"
+        y1="14"
+        x2="26"
+        y2="14"
+        stroke={PEN}
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        opacity="0.55"
+      />
+      <line
+        x1="16"
+        y1="18"
+        x2="23"
+        y2="18"
+        stroke={PEN}
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        opacity="0.55"
+      />
+    </svg>
+  );
+}
+
 const ITEMS = [
   {
     idx: "01",
@@ -9,6 +122,8 @@ const ITEMS = [
     body: "Hausrat, Haftpflicht und Zusatzversicherungen überschneiden sich in 6 von 10 Mandaten.",
     value: 712,
     unit: "/Jahr",
+    icon: <IconStackedDocs />,
+    tilt: "-rotate-[5deg]",
   },
   {
     idx: "02",
@@ -16,6 +131,8 @@ const ITEMS = [
     body: "Nach 30 Jahren ein sechsstelliger Unterschied, verglichen mit einem 3a-Depot.",
     value: 184500,
     unit: null,
+    icon: <IconCoinJar />,
+    tilt: "rotate-[4deg]",
   },
   {
     idx: "03",
@@ -23,6 +140,8 @@ const ITEMS = [
     body: "Nur 18 % vergleichen jährlich. Bei gleicher Deckung spart eine Optimierung:",
     value: 1420,
     unit: "/Jahr",
+    icon: <IconHealthCard />,
+    tilt: "-rotate-[3deg]",
   },
 ];
 
@@ -122,12 +241,17 @@ export function Problem() {
                 key={item.idx}
                 delay={0.08 * i}
                 as="article"
-                className="grid grid-cols-[auto_1fr_auto] items-baseline gap-5 border-t border-line py-6 last:border-b"
+                className="grid grid-cols-[auto_auto_1fr_auto] items-center gap-5 border-t border-line py-6 last:border-b"
               >
-                <span className="text-[11px] uppercase tracking-[0.1em] text-ink-muted">
+                <span className="self-start pt-1 text-[11px] uppercase tracking-[0.1em] text-ink-muted">
                   {item.idx}
                 </span>
-                <span className="max-w-[42ch] text-[15.5px] leading-[1.45] text-ink-2">
+                <span
+                  className={`block h-9 w-9 shrink-0 self-start ${item.tilt}`}
+                >
+                  {item.icon}
+                </span>
+                <span className="max-w-[42ch] self-start text-[15.5px] leading-[1.45] text-ink-2">
                   <strong className="font-medium text-ink">
                     {item.title}
                   </strong>{" "}

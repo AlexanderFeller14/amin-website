@@ -5,25 +5,25 @@ const STEPS = [
   {
     n: "01",
     title: "Erstgespräch",
-    body: "Wir hören zu. Welche Ziele, welche Sorgen, welche Lebenssituation. Kein Verkauf, keine Unterlagen nötig.",
+    body: "Wir hören zu. Ziele, Sorgen, Situation. Kein Verkauf, keine Unterlagen nötig.",
     dur: "45 Min · kostenlos · vor Ort oder online",
   },
   {
     n: "02",
     title: "Analyse",
-    body: "Sie übergeben uns Ihre Unterlagen sicher per verschlüsseltem Upload. Wir prüfen jede Police, jeden Vertrag, jeden Vorsorgeauszug.",
+    body: "Sie laden Unterlagen verschlüsselt hoch. Wir prüfen jede Police, jeden Vertrag, jeden Vorsorgeauszug.",
     dur: "10–14 Tage · CH-Datenhaltung",
   },
   {
     n: "03",
     title: "Empfehlung",
-    body: "Sie erhalten einen klaren Bericht. Was bleibt, was geht, was sich verbessert. Mit Zahlen, nicht mit Bauchgefühl.",
+    body: "Klarer Bericht. Was bleibt, was geht, was sich verbessert. Zahlen statt Bauchgefühl.",
     dur: "90-Min-Termin · schriftlicher Plan",
   },
   {
     n: "04",
     title: "Umsetzung",
-    body: "Sie entscheiden, wir begleiten. Kündigungen, Anträge, Anbieterwechsel. Wir nehmen Ihnen den Papierkram ab. Jahres-Review inklusive.",
+    body: "Sie entscheiden, wir begleiten. Kündigungen, Anträge, Anbieterwechsel: alles übernommen. Jahres-Review inklusive.",
     dur: "Begleitung 12 Monate",
   },
 ];

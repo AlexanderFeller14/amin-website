@@ -7,23 +7,23 @@ import { useEffect, useRef } from "react";
 const QA = [
   {
     q: "Was kostet die Beratung?",
-    a: "Das Erstgespräch ist kostenlos und unverbindlich. Versicherungs- und Vorsorgelösungen werden über die Anbieter finanziert, daher fallen für Sie in der Regel keine direkten Honorare an. Komplexere, separat beauftragte Analysen werden vor Beginn schriftlich vereinbart.",
+    a: "Das Erstgespräch ist kostenlos. Lösungen werden über die Anbieter finanziert, in der Regel ohne direkte Honorare. Separat beauftragte Analysen werden vorab schriftlich vereinbart.",
   },
   {
     q: "Wo findet die Beratung statt?",
-    a: "Sie haben die Wahl: Termin im Büro an der Bernstrasse 162 in Zollikofen oder bei Ihnen vor Ort, je nachdem was besser in Ihren Alltag passt. Auf Wunsch ist auch ein Termin per Videocall möglich.",
+    a: "Im Büro an der Bernstrasse 162 in Zollikofen, bei Ihnen vor Ort, oder per Videocall. Sie wählen, was am besten passt.",
   },
   {
     q: "Welche Versicherungen prüfe ich?",
-    a: "Krankenkasse (Grund- und Zusatzversicherung), Privathaftpflicht, Hausrat, Lebens- und Risikolebensversicherung, Berufs- und Erwerbsunfähigkeit, Motorfahrzeug, Rechtsschutz sowie Vorsorgelösungen der Pensionskasse. Bei Selbständigen zusätzlich BVG, UVG und Krankentaggeld.",
+    a: "Krankenkasse, Haftpflicht, Hausrat, Leben und Risikoleben, Erwerbs- und Berufsunfähigkeit, Motorfahrzeug, Rechtsschutz, Pensionskasse. Bei Selbständigen zusätzlich BVG, UVG und Krankentaggeld.",
   },
   {
     q: "Wie lange dauert eine Beratung?",
-    a: "Vom Erstgespräch bis zur Empfehlung 4 bis 6 Wochen. Umsetzung (Kündigungen, Anbieterwechsel, neue Anträge) weitere 4 bis 12 Wochen, je nach Vertrag. Sie erhalten zu jedem Zeitpunkt einen klaren Statusbericht.",
+    a: "Erstgespräch bis Empfehlung: 4–6 Wochen. Umsetzung weitere 4–12 Wochen, je nach Vertrag. Statusbericht jederzeit.",
   },
   {
     q: "Wer sieht meine Daten?",
-    a: "Ihre Unterlagen werden vertraulich behandelt und nur für die Beratung verwendet. Die Datenverarbeitung erfolgt nach Schweizer Datenschutzgesetz; auf Wunsch Löschung nach Mandatsende, schriftlich bestätigt.",
+    a: "Vertraulich, nur für die Beratung verwendet. Verarbeitung nach Schweizer Datenschutzgesetz. Auf Wunsch Löschung nach Mandatsende, schriftlich bestätigt.",
   },
 ];
 
@@ -59,6 +59,29 @@ export function Faq() {
 
         <div className="grid grid-cols-12 gap-6">
           <Reveal className="col-span-12 self-start md:col-span-4 md:sticky md:top-24">
+            <svg
+              viewBox="0 0 80 96"
+              aria-hidden="true"
+              className="mb-4 h-[clamp(72px,7vw,108px)] w-auto -rotate-[7deg]"
+            >
+              <path
+                d="M22 30 C 22 18, 30 10, 42 10 C 54 10, 62 18, 62 30 C 62 38, 56 43, 48 48 C 43 51, 41 55, 41 64"
+                stroke="#B2342A"
+                strokeWidth="4"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <circle cx="41" cy="78" r="3.6" fill="#B2342A" />
+              <path
+                d="M19 30 C 21 22, 28 14, 38 12"
+                stroke="#B2342A"
+                strokeWidth="1.4"
+                fill="none"
+                strokeLinecap="round"
+                opacity="0.4"
+              />
+            </svg>
             <p className="max-w-[30ch] font-serif text-[clamp(20px,1.8vw,26px)] font-light leading-[1.3] tracking-[-0.005em] text-ink-2">
               Wenn Ihre Frage nicht dabei ist, schreiben Sie uns.{" "}
               <em className="italic text-green">
