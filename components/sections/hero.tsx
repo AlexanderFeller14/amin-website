@@ -23,7 +23,7 @@ export function Hero() {
           {/* dossier label, sits above the sheet, flush left */}
           <div className="mb-3 flex items-center gap-3 pl-[clamp(8px,2vw,24px)]">
             <span className="h-[2px] w-[18px] bg-pen-red" aria-hidden="true" />
-            <div className="flex items-baseline gap-3 text-[10.5px] font-semibold uppercase tracking-[0.22em] text-ink-2">
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-[10.5px] font-semibold uppercase tracking-[0.22em] text-ink-2">
               <span>Vorsorge</span>
               <span aria-hidden="true" className="text-ink-muted-2">·</span>
               <span>Versicherung</span>
@@ -34,22 +34,22 @@ export function Hero() {
 
           {/* the paper sheet */}
           <article className="paper-sheet relative px-[clamp(20px,4vw,72px)] pt-[clamp(40px,5vw,72px)] pb-[clamp(40px,5vw,80px)]">
-            {/* stamp top-right */}
-            <div className="pointer-events-none absolute right-[clamp(20px,5vw,80px)] top-[clamp(20px,3vw,40px)] z-[3]">
+            {/* stamp top-right, hidden on mobile (no room) */}
+            <div className="pointer-events-none absolute right-[clamp(20px,5vw,80px)] top-[clamp(20px,3vw,40px)] z-[3] hidden md:block">
               <div className="stempel">
                 <span>Erstgespräch</span>
                 <span>kostenlos</span>
               </div>
             </div>
 
-            {/* dossier kopfzeile: single line of real metadata */}
-            <div className="flex items-baseline gap-3 border-b border-line pb-4 text-[10.5px] uppercase tracking-[0.18em] text-ink-muted">
+            {/* dossier kopfzeile: metadata, wraps on narrow screens */}
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-line pb-4 text-[10.5px] uppercase tracking-[0.18em] text-ink-muted md:pr-[180px]">
               <span className="font-semibold tracking-[0.22em] text-ink-2">
                 Persönliche Finanzberatung
               </span>
-              <span aria-hidden="true">·</span>
+              <span aria-hidden="true" className="text-ink-muted-2">·</span>
               <span>Büro Zollikofen</span>
-              <span aria-hidden="true">·</span>
+              <span aria-hidden="true" className="text-ink-muted-2">·</span>
               <span>Termin vor Ort möglich</span>
             </div>
 
