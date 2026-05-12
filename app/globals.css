@@ -21,6 +21,9 @@
   --green-deep:  #142A21;
   --signal:      #B0532A;
   --warm:        #C97A4A;
+  --pen-red:     #B2342A;
+  --pen-red-soft: rgba(178, 52, 42, 0.72);
+  --stamp-ink:   rgba(178, 52, 42, 0.78);
   --line:        rgba(26, 23, 15, 0.22);
   --line-soft:   rgba(26, 23, 15, 0.12);
   --line-bone:   rgba(234, 226, 208, 0.18);
@@ -65,6 +68,9 @@
   --color-green-deep:  var(--green-deep);
   --color-signal:      var(--signal);
   --color-warm:        var(--warm);
+  --color-pen-red:     var(--pen-red);
+  --color-pen-red-soft: var(--pen-red-soft);
+  --color-stamp-ink:   var(--stamp-ink);
   --color-line:        var(--line);
   --color-line-soft:   var(--line-soft);
   --color-line-bone:   var(--line-bone);
@@ -233,6 +239,118 @@
     transform: rotate(-3deg);
     display: inline-block;
     line-height: 1;
+  }
+
+  /* ───────── Mappe / Dossier primitives ─────────
+     The page is a client folder. Sections sit as paper sheets
+     on the bone background, with stamps, paper clips, file tabs,
+     and red-pen annotations.
+  */
+
+  /* a physical paper sheet floating on the bone background */
+  .paper-sheet {
+    position: relative;
+    background: #F6EFDD;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(26, 23, 15, 0.018) 0 1px, transparent 1px 3px),
+      radial-gradient(circle at 30% 20%, rgba(26, 23, 15, 0.025), transparent 60%);
+    box-shadow:
+      0 1px 0 rgba(26, 23, 15, 0.06),
+      0 2px 4px rgba(26, 23, 15, 0.08),
+      0 12px 24px -8px rgba(26, 23, 15, 0.18),
+      0 30px 60px -20px rgba(26, 23, 15, 0.22);
+  }
+  .paper-sheet::after {
+    /* torn / soft top edge to break the "perfect rectangle" feel */
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(circle at 8% 92%, rgba(26, 23, 15, 0.06), transparent 24px),
+      radial-gradient(circle at 96% 4%, rgba(26, 23, 15, 0.05), transparent 32px);
+  }
+
+  /* file tab sticking out of the top of a sheet */
+  .akten-tab {
+    position: absolute;
+    top: -22px;
+    background: #E4D9BF;
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 7px 18px 6px;
+    border: 1px solid rgba(26, 23, 15, 0.32);
+    border-bottom: none;
+    clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 100%, 0 100%);
+    box-shadow: 0 -1px 0 rgba(26, 23, 15, 0.05) inset;
+  }
+
+  /* rubber stamp, rotated, on top of the sheet */
+  .stempel {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 8px 14px 6px;
+    border: 2px solid var(--stamp-ink);
+    color: var(--stamp-ink);
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 10.5px;
+    font-weight: 700;
+    line-height: 1.05;
+    transform: rotate(-6deg);
+    opacity: 0.92;
+    /* slightly broken edge — like real ink that didn't fully take */
+    background:
+      radial-gradient(circle at 20% 80%, transparent 0 2px, rgba(178, 52, 42, 0.04) 2px 5px, transparent 5px),
+      radial-gradient(circle at 78% 22%, transparent 0 1.5px, rgba(178, 52, 42, 0.04) 1.5px 4px, transparent 4px);
+  }
+  .stempel-date {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+    opacity: 0.85;
+  }
+
+  /* red-pen mark: underline with rough, hand-drawn feel */
+  .pen-mark {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .pen-mark::after {
+    content: "";
+    position: absolute;
+    left: -2%;
+    right: -2%;
+    bottom: -0.12em;
+    height: 0.22em;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 18' fill='none'><path d='M3 11 C 60 3, 130 15, 200 8 S 300 13, 317 6' stroke='%23B2342A' stroke-width='2.6' stroke-linecap='round' fill='none' opacity='0.88'/></svg>");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    pointer-events: none;
+  }
+
+  /* hand-written margin annotation */
+  .margin-note {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--pen-red);
+    line-height: 1.2;
+    letter-spacing: 0.005em;
+  }
+
+  /* the photo "tape" placeholder edge — a soft amber wash */
+  .photo-tape {
+    background: rgba(201, 122, 74, 0.55);
+    box-shadow: 0 1px 1px rgba(26, 23, 15, 0.18);
   }
 }
 
