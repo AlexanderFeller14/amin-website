@@ -161,7 +161,7 @@ export function Hero() {
                         {/* curving line that loops from the note up-left toward the buttons,
                             with the arrowhead at the TOP pointing at the CTAs */}
                         <path
-                          d="M14 58 C 6 50, 4 36, 12 26 C 22 14, 32 10, 38 6 M38 6 L 30 10 M38 6 L 38 14"
+                          d="M14 58 C 6 50, 4 36, 12 26 C 22 14, 32 10, 38 6 M38 6 L 29 7 M38 6 L 34 14"
                           stroke="#B2342A"
                           strokeWidth="1.8"
                           fill="none"
