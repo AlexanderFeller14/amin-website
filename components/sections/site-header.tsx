@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { BrandMark } from "@/components/brand-mark";
 
 const NAV = [
   { href: "#problem", label: "Diagnose" },
@@ -18,12 +17,11 @@ export function SiteHeader() {
         <nav className="grid h-16 grid-cols-[auto_1fr_auto] items-center gap-8">
           <Link
             href="#top"
-            className="flex items-center gap-2.5 font-serif text-[20px] leading-none tracking-[-0.01em]"
-            aria-label="Amin Finanzberatung"
+            className="font-serif text-[20px] leading-none tracking-[-0.01em]"
+            aria-label="Finanz Burrata"
           >
-            <BrandMark className="h-[22px] w-[22px] text-ink" />
             <span>
-              Amin&nbsp;<em className="italic text-green">Finanzberatung</em>
+              Finanz&nbsp;<em className="italic text-green">Burrata</em>
             </span>
           </Link>
 

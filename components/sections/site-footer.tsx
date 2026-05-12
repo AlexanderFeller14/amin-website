@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { BrandMark } from "@/components/brand-mark";
 
 const COLS = [
   {
@@ -49,11 +48,10 @@ export function SiteFooter() {
           <div className="col-span-12 flex flex-col gap-3.5 md:col-span-4">
             <Link
               href="#top"
-              className="flex items-center gap-2.5 font-serif text-[20px] leading-none tracking-[-0.01em]"
+              className="font-serif text-[20px] leading-none tracking-[-0.01em]"
             >
-              <BrandMark className="h-[22px] w-[22px] text-ink" />
               <span>
-                Amin&nbsp;<em className="italic text-green">Finanzberatung</em>
+                Finanz&nbsp;<em className="italic text-green">Burrata</em>
               </span>
             </Link>
             <p className="max-w-[30ch] font-serif text-[18px] font-light leading-[1.35] tracking-[-0.005em] text-ink-2">
