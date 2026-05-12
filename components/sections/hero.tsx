@@ -5,13 +5,24 @@ import { motion, useReducedMotion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { Blob } from "@/components/blob";
 import { ArrowDoodle } from "@/components/arrow-doodle";
+import { DoodleUnderline } from "@/components/doodle-underline";
+import { DoodleCircle } from "@/components/doodle-circle";
 
-const HERO_LINES = [
-  { plain: "Ihr Geld verdient", em: null },
-  { plain: "ein ", em: "zweites" },
-  { plain: "Paar Augen —", em: null },
-  { plain: "eines, das nichts ", em: "verkauft.", doodle: true },
-] as const;
+const TITLE_LINES = [
+  (
+    <>
+      <em className="italic font-light text-green">Klarheit</em> über
+    </>
+  ),
+  (
+    <>
+      Ihre{" "}
+      <em className="italic font-light text-green">
+        <DoodleUnderline delay={1.4}>Finanzen.</DoodleUnderline>
+      </em>
+    </>
+  ),
+];
 
 const STATS = [
   {
@@ -69,9 +80,9 @@ export function Hero() {
         </div>
 
         {/* title — masked staggered reveal */}
-        <h1 className="mt-[clamp(40px,7vw,80px)] font-serif text-[clamp(46px,10.5vw,168px)] font-light leading-[0.92] tracking-[-0.025em] text-ink">
-          {HERO_LINES.map((line, i) => (
-            <span key={i} className="block overflow-hidden">
+        <h1 className="mt-[clamp(40px,7vw,80px)] font-serif text-[clamp(40px,7.5vw,112px)] font-light leading-[1.0] tracking-[-0.02em] text-ink">
+          {TITLE_LINES.map((line, i) => (
+            <span key={i} className="block overflow-hidden pb-[0.08em]">
               <motion.span
                 className="inline-block"
                 initial={reduce ? false : { y: "110%" }}
@@ -82,16 +93,7 @@ export function Hero() {
                   delay: 0.1 * i,
                 }}
               >
-                {line.plain}
-                {line.em ? (
-                  <em className="italic font-light text-green">
-                    {"doodle" in line && line.doodle ? (
-                      <span className="doodle-underline">{line.em}</span>
-                    ) : (
-                      line.em
-                    )}
-                  </em>
-                ) : null}
+                {line}
               </motion.span>
             </span>
           ))}
@@ -99,15 +101,11 @@ export function Hero() {
 
         {/* lead + ctas */}
         <div className="mt-[clamp(36px,5vw,72px)] grid grid-cols-12 gap-6 border-t border-line pt-7">
-          <p className="col-span-12 max-w-[46ch] font-serif text-[clamp(18px,1.6vw,22px)] font-light leading-[1.42] tracking-[-0.005em] text-ink-2 md:col-span-6">
-            Wir prüfen Versicherungen, Säule 3a, Pensionskasse und Sparpläne
-            neutral.{" "}
-            <em className="italic text-green">
-              Honorarbasiert, ohne Provisionen
-            </em>{" "}
-            — und zeigen Ihnen schwarz auf weiss, wo Sie jährlich{" "}
-            <span className="doodle-circle">vierstellig sparen</span>, ohne auf
-            Sicherheit zu verzichten.
+          <p className="col-span-12 max-w-[42ch] font-serif text-[clamp(18px,1.6vw,22px)] font-light leading-[1.42] tracking-[-0.005em] text-ink-2 md:col-span-6">
+            <em className="italic text-green">Honorarbasiert und unabhängig.</em>{" "}
+            Vom ersten Sparplan bis zur Pensionierung. Wir zeigen, wo Sie jährlich{" "}
+            <DoodleCircle delay={1.9}>vierstellig sparen</DoodleCircle>, ohne dass
+            Ihnen etwas verkauft wird.
           </p>
 
           <div className="col-span-12 flex flex-col items-start gap-3.5 md:col-span-5 md:col-start-8">
