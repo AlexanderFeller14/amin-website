@@ -129,8 +129,8 @@ export function Hero() {
                 <div className="mt-[clamp(28px,4vw,56px)] grid grid-cols-12 gap-6 border-t border-line pt-7">
                   <p className="col-span-12 max-w-[44ch] font-serif text-[clamp(17px,1.55vw,21px)] font-light leading-[1.45] tracking-[-0.005em] text-ink-2 md:col-span-7">
                     Persönliche Beratung für Vorsorge, Versicherung und
-                    Vermögen, vom ersten Sparplan bis zur Pensionierung. Wir
-                    sortieren, was vorhanden ist, schliessen Lücken, und Sie
+                    Vermögen, vom ersten Sparplan bis zur Pensionierung. Ich
+                    sortiere, was vorhanden ist, schliesse Lücken, und Sie
                     behalten den Überblick.
                   </p>
 

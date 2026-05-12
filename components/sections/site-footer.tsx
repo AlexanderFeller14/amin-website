@@ -14,10 +14,9 @@ const COLS = [
   {
     title: "Firma",
     links: [
-      { href: "#", label: "Über uns" },
-      { href: "#", label: "Beraterteam" },
+      { href: "#", label: "Über mich" },
+      { href: "#", label: "Profil" },
       { href: "#", label: "Honorar & Mandat" },
-      { href: "#", label: "Karriere" },
     ],
   },
   {

@@ -230,7 +230,7 @@ export function Problem() {
                 />
               </svg>
               <p className="font-serif text-[clamp(22px,2.4vw,32px)] italic font-light leading-[1.2] tracking-[-0.01em] text-ink">
-                Wir machen sichtbar, was bisher unsichtbar war.
+                Ich mache sichtbar, was bisher unsichtbar war.
               </p>
             </Reveal>
           </div>

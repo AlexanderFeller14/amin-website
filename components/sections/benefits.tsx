@@ -46,7 +46,7 @@ export function Benefits() {
     >
       <div className="wrap">
         <SectionHead index="04" kicker="Vorteile">
-          Warum Kundinnen und Kunden uns ihre{" "}
+          Warum Kundinnen und Kunden mir ihre{" "}
           <em className="italic text-green">Finanzen</em> anvertrauen.
         </SectionHead>
 

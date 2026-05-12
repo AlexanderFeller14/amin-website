@@ -83,9 +83,9 @@ export function Faq() {
               />
             </svg>
             <p className="max-w-[30ch] font-serif text-[clamp(20px,1.8vw,26px)] font-light leading-[1.3] tracking-[-0.005em] text-ink-2">
-              Wenn Ihre Frage nicht dabei ist, schreiben Sie uns.{" "}
+              Wenn Ihre Frage nicht dabei ist, schreiben Sie mir.{" "}
               <em className="italic text-green">
-                Wir antworten persönlich,
+                Ich antworte persönlich,
               </em>{" "}
               meist am gleichen Tag.
             </p>

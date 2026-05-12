@@ -89,7 +89,7 @@ export function Contact() {
               as="p"
               className="font-serif text-[clamp(28px,3vw,42px)] font-light italic leading-[1.15] tracking-[-0.015em] text-bone"
             >
-              Wir nehmen jährlich nur eine begrenzte Zahl neuer Mandate an,
+              Ich nehme jährlich nur eine begrenzte Zahl neuer Mandate an,
               damit jede Beratung die Tiefe bekommt, die sie verdient.
             </Reveal>
 
@@ -227,7 +227,7 @@ export function Contact() {
                   type="submit"
                   className="rounded-none bg-ink px-5 py-3.5 text-[13.5px] text-bone hover:bg-green-deep"
                 >
-                  {sent ? "Vielen Dank, wir melden uns." : "Anfrage senden"}
+                  {sent ? "Vielen Dank, ich melde mich." : "Anfrage senden"}
                   {!sent && (
                     <ArrowRight className="ml-2 h-3.5 w-3.5" strokeWidth={1.5} />
                   )}
