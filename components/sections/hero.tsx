@@ -36,7 +36,7 @@ export function Hero() {
               </div>
             </div>
 
-            {/* dossier kopfzeile — single line of real metadata */}
+            {/* dossier kopfzeile: single line of real metadata */}
             <div className="flex items-baseline gap-3 border-b border-line pb-4 text-[10.5px] uppercase tracking-[0.18em] text-ink-muted">
               <span className="font-semibold tracking-[0.22em] text-ink-2">
                 Dossier 01
@@ -48,7 +48,7 @@ export function Hero() {
             </div>
 
             <div className="relative mt-[clamp(36px,5vw,72px)] grid grid-cols-12 gap-x-[clamp(20px,4vw,56px)] gap-y-10">
-              {/* LEFT — portrait placeholder with paper clip */}
+              {/* LEFT: portrait placeholder with paper clip */}
               <figure className="col-span-12 md:col-span-4">
                 <div className="relative mx-auto max-w-[300px] md:mx-0">
                   {/* paper clip SVG, sits over the top edge */}
@@ -74,7 +74,7 @@ export function Hero() {
                       alt="Portrait Amin Barazza"
                       className="absolute inset-0 h-full w-full object-cover object-center"
                     />
-                    {/* tape strips at corners — small amber rectangles */}
+                    {/* tape strips at corners: small amber rectangles */}
                     <span
                       className="photo-tape absolute -left-3 top-3 z-[2] h-3 w-12 -rotate-[18deg]"
                       aria-hidden="true"
@@ -99,7 +99,7 @@ export function Hero() {
                 </div>
               </figure>
 
-              {/* RIGHT — title + lead + ctas */}
+              {/* RIGHT: title + lead + ctas */}
               <div className="col-span-12 md:col-span-8">
                 <h1 className="font-serif text-[clamp(40px,7.2vw,108px)] font-light leading-[0.98] tracking-[-0.022em] text-ink">
                   {TITLE_LINES.map((line, i) => (
@@ -126,7 +126,7 @@ export function Hero() {
                 <div className="mt-[clamp(28px,4vw,56px)] grid grid-cols-12 gap-6 border-t border-line pt-7">
                   <p className="col-span-12 max-w-[44ch] font-serif text-[clamp(17px,1.55vw,21px)] font-light leading-[1.45] tracking-[-0.005em] text-ink-2 md:col-span-7">
                     Persönliche Beratung für Vorsorge, Versicherung und
-                    Vermögen — vom ersten Sparplan bis zur Pensionierung. Wir
+                    Vermögen, vom ersten Sparplan bis zur Pensionierung. Wir
                     sortieren, was vorhanden ist, schliessen Lücken, und Sie
                     behalten den Überblick.
                   </p>
@@ -151,27 +151,29 @@ export function Hero() {
                       </Link>
                     </div>
 
-                    {/* hand-written margin note, points back at the CTAs */}
-                    <div className="relative pl-7">
+                    {/* hand-written margin note, curling up to the CTAs */}
+                    <div className="relative mt-1 flex items-start gap-2">
                       <svg
-                        viewBox="0 0 60 40"
+                        viewBox="0 0 56 64"
                         aria-hidden="true"
-                        className="absolute left-0 top-1 h-[34px] w-[44px]"
+                        className="mt-1 h-[58px] w-[40px] shrink-0"
                       >
+                        {/* curving line that loops from the note up-left toward the buttons,
+                            with the arrowhead at the TOP pointing at the CTAs */}
                         <path
-                          d="M52 30 C 36 32, 22 22, 14 12 M14 12 L 22 18 M14 12 L 20 6"
+                          d="M14 58 C 6 50, 4 36, 12 26 C 22 14, 32 10, 38 6 M38 6 L 30 10 M38 6 L 38 14"
                           stroke="#B2342A"
-                          strokeWidth="1.6"
+                          strokeWidth="1.8"
                           fill="none"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          opacity="0.85"
+                          opacity="0.9"
                         />
                       </svg>
-                      <p className="margin-note text-[16px] -rotate-[2deg]">
-                        45 Min., kostenlos,
+                      <p className="margin-note text-[26px] -rotate-[3deg]">
+                        45 Min.,
                         <br />
-                        unverbindlich.
+                        kostenlos &amp; unverbindlich.
                       </p>
                     </div>
                   </div>
@@ -183,7 +185,7 @@ export function Hero() {
                     Im Auftrag
                   </span>
                   <div className="flex flex-col items-end gap-1">
-                    {/* signature placeholder — to be replaced with real scan */}
+                    {/* signature placeholder, to be replaced with real scan */}
                     <span
                       className="font-serif text-[34px] italic font-light leading-none text-pen-red -rotate-[3deg]"
                       style={{ letterSpacing: "0.01em" }}

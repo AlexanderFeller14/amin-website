@@ -55,6 +55,7 @@
   --font-sans: var(--font-sans), "Helvetica Neue", system-ui, sans-serif;
   --font-serif: var(--font-serif), "Iowan Old Style", Georgia, serif;
   --font-mono: var(--font-sans), ui-monospace, monospace;
+  --font-hand: var(--font-hand), "Bradley Hand", "Comic Sans MS", cursive;
 
   /* editorial colors */
   --color-bone:        var(--bone);
@@ -306,7 +307,7 @@
     line-height: 1.05;
     transform: rotate(-6deg);
     opacity: 0.92;
-    /* slightly broken edge — like real ink that didn't fully take */
+    /* slightly broken edge, like real ink that didn't fully take */
     background:
       radial-gradient(circle at 20% 80%, transparent 0 2px, rgba(178, 52, 42, 0.04) 2px 5px, transparent 5px),
       radial-gradient(circle at 78% 22%, transparent 0 1.5px, rgba(178, 52, 42, 0.04) 1.5px 4px, transparent 4px);
@@ -337,17 +338,16 @@
     pointer-events: none;
   }
 
-  /* hand-written margin annotation */
+  /* hand-written margin annotation: real handwriting, not editorial italic */
   .margin-note {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 300;
+    font-family: var(--font-hand);
+    font-weight: 500;
     color: var(--pen-red);
-    line-height: 1.2;
-    letter-spacing: 0.005em;
+    line-height: 1.05;
+    letter-spacing: 0.01em;
   }
 
-  /* the photo "tape" placeholder edge — a soft amber wash */
+  /* the photo "tape" placeholder edge: a soft amber wash */
   .photo-tape {
     background: rgba(201, 122, 74, 0.55);
     box-shadow: 0 1px 1px rgba(26, 23, 15, 0.18);

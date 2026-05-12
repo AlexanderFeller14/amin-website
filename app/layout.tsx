@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Geist } from "next/font/google";
+import { Fraunces, Geist, Caveat } from "next/font/google";
 import "./globals.css";
 
 const serif = Fraunces({
@@ -13,6 +13,13 @@ const serif = Fraunces({
 const sans = Geist({
   variable: "--font-sans",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const hand = Caveat({
+  variable: "--font-hand",
+  subsets: ["latin"],
+  weight: ["500", "600"],
   display: "swap",
 });
 
@@ -30,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="de-CH"
-      className={`${serif.variable} ${sans.variable} h-full antialiased`}
+      className={`${serif.variable} ${sans.variable} ${hand.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bone text-ink">
         {children}
