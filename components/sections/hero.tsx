@@ -55,7 +55,7 @@ export function Hero() {
 
             <div className="relative mt-[clamp(36px,5vw,72px)] grid grid-cols-12 gap-x-[clamp(20px,4vw,56px)] gap-y-10">
               {/* LEFT: portrait placeholder with paper clip */}
-              <figure className="col-span-12 md:col-span-4">
+              <figure className="order-2 col-span-12 md:order-none md:col-span-4 md:col-start-1 md:row-start-1 md:row-span-2">
                 <div className="relative mx-auto max-w-[300px] md:mx-0">
                   {/* paper clip SVG, sits over the top edge */}
                   <svg
@@ -105,31 +105,32 @@ export function Hero() {
                 </div>
               </figure>
 
-              {/* RIGHT: title + lead + ctas */}
-              <div className="col-span-12 md:col-span-8">
-                <h1 className="font-serif text-[clamp(40px,7.2vw,108px)] font-light leading-[0.98] tracking-[-0.022em] text-ink">
-                  {TITLE_LINES.map((line, i) => (
-                    <span
-                      key={i}
-                      className="block overflow-hidden pb-[0.08em]"
+              {/* TITLE: mobile order 1, desktop placed in right column row 1 */}
+              <h1 className="order-1 col-span-12 font-serif text-[clamp(40px,7.2vw,108px)] font-light leading-[0.98] tracking-[-0.022em] text-ink md:order-none md:col-span-8 md:col-start-5 md:row-start-1">
+                {TITLE_LINES.map((line, i) => (
+                  <span
+                    key={i}
+                    className="block overflow-hidden pb-[0.08em]"
+                  >
+                    <motion.span
+                      className="inline-block"
+                      initial={reduce ? false : { y: "110%" }}
+                      animate={{ y: 0 }}
+                      transition={{
+                        duration: 1.1,
+                        ease: [0.2, 0.7, 0.15, 1],
+                        delay: 0.1 * i,
+                      }}
                     >
-                      <motion.span
-                        className="inline-block"
-                        initial={reduce ? false : { y: "110%" }}
-                        animate={{ y: 0 }}
-                        transition={{
-                          duration: 1.1,
-                          ease: [0.2, 0.7, 0.15, 1],
-                          delay: 0.1 * i,
-                        }}
-                      >
-                        {line}
-                      </motion.span>
-                    </span>
-                  ))}
-                </h1>
+                      {line}
+                    </motion.span>
+                  </span>
+                ))}
+              </h1>
 
-                <div className="mt-[clamp(28px,4vw,56px)] grid grid-cols-12 gap-6 border-t border-line pt-7">
+              {/* RIGHT: lead + ctas + signature row, mobile order 3 */}
+              <div className="order-3 col-span-12 md:order-none md:col-span-8 md:col-start-5 md:row-start-2">
+                <div className="mt-[clamp(0px,2vw,16px)] grid grid-cols-12 gap-6 border-t border-line pt-7">
                   <p className="col-span-12 max-w-[44ch] font-serif text-[clamp(17px,1.55vw,21px)] font-light leading-[1.45] tracking-[-0.005em] text-ink-2 md:col-span-7">
                     Persönliche Beratung für Vorsorge, Versicherung und
                     Vermögen, vom ersten Sparplan bis zur Pensionierung. Ich
