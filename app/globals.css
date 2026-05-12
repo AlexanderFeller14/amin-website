@@ -272,39 +272,6 @@
       radial-gradient(circle at 96% 4%, rgba(26, 23, 15, 0.05), transparent 32px);
   }
 
-  /* file tab sticking out of the top of a sheet — subtle 3D look */
-  .akten-tab {
-    position: absolute;
-    top: -26px;
-    display: inline-flex;
-    align-items: baseline;
-    gap: 10px;
-    background:
-      /* upper-left highlight (light source) */
-      linear-gradient(135deg, rgba(255, 248, 228, 0.6) 0%, transparent 26%),
-      /* lower-right shading (away from light) */
-      linear-gradient(-45deg, rgba(26, 23, 15, 0.18) 0%, transparent 32%),
-      /* base face: light top, mid, slightly darker bottom for paper thickness */
-      linear-gradient(180deg, #EEE2C8 0%, #E4D9BF 45%, #D1C5A7 100%);
-    color: var(--ink-2);
-    font-family: var(--font-sans);
-    font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    padding: 9px 22px 7px;
-    border: 1px solid rgba(26, 23, 15, 0.32);
-    border-bottom: none;
-    clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 100%, 0 100%);
-    filter:
-      drop-shadow(0 2px 2px rgba(26, 23, 15, 0.18))
-      drop-shadow(0 4px 6px rgba(26, 23, 15, 0.08));
-  }
-  .akten-tab .tab-sep {
-    color: var(--ink-muted);
-    transform: translateY(-1px);
-  }
-
   /* rubber stamp, rotated, on top of the sheet */
   .stempel {
     display: inline-flex;

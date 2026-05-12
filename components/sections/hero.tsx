@@ -17,16 +17,19 @@ export function Hero() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative pt-[clamp(56px,7vw,108px)] pb-[clamp(80px,10vw,160px)]">
+    <section className="relative pt-[clamp(28px,3.5vw,56px)] pb-[clamp(40px,5vw,80px)]">
       <div className="wrap">
         <div className="relative">
-          {/* the file tab sticking out of the top */}
-          <div className="akten-tab left-[clamp(24px,5vw,72px)]">
-            <span>Vorsorge</span>
-            <span className="tab-sep" aria-hidden="true">·</span>
-            <span>Versicherung</span>
-            <span className="tab-sep" aria-hidden="true">·</span>
-            <span>Vermögen</span>
+          {/* dossier label, sits above the sheet, flush left */}
+          <div className="mb-3 flex items-center gap-3 pl-[clamp(8px,2vw,24px)]">
+            <span className="h-[2px] w-[18px] bg-pen-red" aria-hidden="true" />
+            <div className="flex items-baseline gap-3 text-[10.5px] font-semibold uppercase tracking-[0.22em] text-ink-2">
+              <span>Vorsorge</span>
+              <span aria-hidden="true" className="text-ink-muted-2">·</span>
+              <span>Versicherung</span>
+              <span aria-hidden="true" className="text-ink-muted-2">·</span>
+              <span>Vermögen</span>
+            </div>
           </div>
 
           {/* the paper sheet */}
