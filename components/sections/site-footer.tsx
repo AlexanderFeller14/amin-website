@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { Mail, Phone } from "lucide-react";
 
 const ORIENTIERUNG = [
+  { href: "#problem", label: "Diagnose" },
+  { href: "#leistungen", label: "Leistungen" },
   { href: "#prozess", label: "Prozess" },
   { href: "#vorteile", label: "Vorteile" },
   { href: "#stimmen", label: "Stimmen" },
@@ -41,7 +44,7 @@ export function SiteFooter() {
 
           <nav
             aria-label="Orientierung"
-            className="col-span-6 flex flex-col gap-3 md:col-span-2"
+            className="col-span-6 flex flex-col gap-3 md:col-span-2 md:justify-self-end"
           >
             <h5 className="text-[10.5px] font-medium uppercase tracking-[0.14em] text-ink-muted">
               Orientierung
@@ -62,7 +65,7 @@ export function SiteFooter() {
             </ul>
           </nav>
 
-          <address className="col-span-6 flex flex-col gap-4 not-italic md:col-span-3">
+          <address className="col-span-6 flex flex-col gap-4 not-italic md:col-span-3 md:justify-self-end">
             <h5 className="text-[10.5px] font-medium uppercase tracking-[0.14em] text-ink-muted">
               Kontakt
             </h5>
@@ -75,15 +78,17 @@ export function SiteFooter() {
             <div className="flex flex-col gap-1 text-[14px] leading-[1.55]">
               <a
                 href="tel:+41764674002"
-                className="w-fit text-ink-2 transition-colors hover:text-ink"
+                className="inline-flex w-fit items-center gap-1.5 text-ink-2 transition-colors hover:text-ink"
               >
-                +41&nbsp;76&nbsp;467&nbsp;40&nbsp;02
+                <Phone className="h-3.5 w-3.5" strokeWidth={1.5} />
+                Telefon
               </a>
               <a
                 href="mailto:amin.barraza@swisslife-select.ch"
-                className="w-fit break-all text-ink-2 transition-colors hover:text-ink"
+                className="inline-flex w-fit items-center gap-1.5 text-ink-2 transition-colors hover:text-ink"
               >
-                amin.barraza@swisslife-select.ch
+                <Mail className="h-3.5 w-3.5" strokeWidth={1.5} />
+                Mail
               </a>
             </div>
 
