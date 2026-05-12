@@ -42,7 +42,7 @@ export function Hero() {
             {/* dossier kopfzeile: single line of real metadata */}
             <div className="flex items-baseline gap-3 border-b border-line pb-4 text-[10.5px] uppercase tracking-[0.18em] text-ink-muted">
               <span className="font-semibold tracking-[0.22em] text-ink-2">
-                Dossier 01
+                Persönliche Finanzberatung
               </span>
               <span aria-hidden="true">·</span>
               <span>Zollikofen</span>
@@ -137,6 +137,12 @@ export function Hero() {
                   <div className="col-span-12 flex flex-col items-start gap-4 md:col-span-5">
                     <div className="flex flex-wrap gap-2.5">
                       <Link
+                        href="#leistungen"
+                        className="inline-flex items-center gap-2.5 border border-ink px-5 py-3.5 text-[13.5px] text-ink transition-colors hover:bg-ink hover:text-bone"
+                      >
+                        Leistungen ansehen
+                      </Link>
+                      <Link
                         href="#kontakt"
                         className="inline-flex items-center gap-2.5 border border-ink bg-ink px-5 py-3.5 text-[13.5px] text-bone transition-colors hover:bg-green-deep hover:border-green-deep"
                       >
@@ -145,12 +151,6 @@ export function Hero() {
                           className="h-3.5 w-3.5"
                           strokeWidth={1.5}
                         />
-                      </Link>
-                      <Link
-                        href="#leistungen"
-                        className="inline-flex items-center gap-2.5 border border-ink px-5 py-3.5 text-[13.5px] text-ink transition-colors hover:bg-ink hover:text-bone"
-                      >
-                        Leistungen ansehen
                       </Link>
                     </div>
 
@@ -185,7 +185,7 @@ export function Hero() {
                 {/* signature row at the bottom of the sheet */}
                 <div className="mt-[clamp(40px,5vw,72px)] flex items-end justify-between gap-6 border-t border-line pt-6">
                   <span className="text-[10.5px] uppercase tracking-[0.18em] text-ink-muted">
-                    Im Auftrag
+                    Ihr Berater
                   </span>
                   <div className="flex flex-col items-end gap-1">
                     {/* signature placeholder, to be replaced with real scan */}
