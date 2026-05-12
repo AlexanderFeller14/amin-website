@@ -241,7 +241,7 @@ export function Problem() {
                 key={item.idx}
                 delay={0.08 * i}
                 as="article"
-                className="grid grid-cols-[auto_auto_1fr_auto] items-center gap-5 border-t border-line py-6 last:border-b"
+                className="grid grid-cols-[auto_auto_1fr] items-center gap-x-4 gap-y-3 border-t border-line py-6 last:border-b sm:gap-x-5 md:grid-cols-[auto_auto_1fr_auto] md:gap-5"
               >
                 <span className="self-start pt-1 text-[11px] uppercase tracking-[0.1em] text-ink-muted">
                   {item.idx}
@@ -257,7 +257,7 @@ export function Problem() {
                   </strong>{" "}
                   {item.body}
                 </span>
-                <span className="whitespace-nowrap font-serif text-[clamp(28px,3vw,44px)] font-light leading-none tracking-[-0.015em] tabular text-ink">
+                <span className="col-span-3 whitespace-nowrap text-right font-serif text-[clamp(28px,7vw,44px)] font-light leading-none tracking-[-0.015em] tabular text-ink md:col-span-1 md:text-left">
                   <CountUp to={item.value} prefix="CHF " />
                   {item.unit && (
                     <span className="ml-1 align-[0.4em] font-sans text-[0.42em] tracking-[0.04em] text-ink-muted">
