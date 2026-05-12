@@ -22,7 +22,11 @@ export function Hero() {
         <div className="relative">
           {/* the file tab sticking out of the top */}
           <div className="akten-tab left-[clamp(24px,5vw,72px)]">
-            Klient · SIE &nbsp;/&nbsp; Dossier 2026
+            <span>Vorsorge</span>
+            <span className="tab-sep" aria-hidden="true">·</span>
+            <span>Versicherung</span>
+            <span className="tab-sep" aria-hidden="true">·</span>
+            <span>Vermögen</span>
           </div>
 
           {/* the paper sheet */}
@@ -32,7 +36,6 @@ export function Hero() {
               <div className="stempel">
                 <span>Erstgespräch</span>
                 <span>kostenlos</span>
-                <span className="stempel-date">Mai · 2026</span>
               </div>
             </div>
 
